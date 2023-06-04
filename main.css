@@ -1,0 +1,149 @@
+body {
+    background-color: #ffffff;
+}
+
+.custom-nav {
+    background-color: #ffffff;
+}
+
+.custom-nav a {
+    float: left;
+    color: #000000;
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.custom-nav a:hover {
+    color: #000000;
+}
+
+.image-container img {
+    position: absolute;
+}
+
+.top-left {
+    top: 68px;
+    left: 0;
+    z-index: -1;
+    width: 400px;
+}
+
+
+.bottom-right {
+    right: 0;
+    bottom: 0;
+    width: 400px;
+}
+
+@keyframes type {
+    0%,
+    100% {
+        width: 0px;
+    }
+    30%,
+    60% {
+        width: 394.09px;
+    }
+}
+
+@media(max-width: 330px) {
+    .typing h1 {
+        font-size: 3rem;
+        animation: type 5s steps(10) infinite;
+    }
+
+    @keyframes type {
+
+        0%,
+        100% {
+            width: 0px;
+        }
+
+        30%,
+        60% {
+            width: 305px;
+        }
+    }
+}
+
+.box {
+    border-radius: 10px;
+    border-width: 0 1px 1px 0;
+    border-style: solid;
+    border-color: #ffffff;
+    left: 24%;
+    position: absolute;
+    top: 25%;
+    width: 750px;
+    height: 450px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.box h1 {
+    white-space: nowrap;
+    left: 8%;
+    position: absolute;
+    top: 20%;
+    font-size: 3rem;
+    z-index: 2;
+    color: #000000;
+    font-family: "Lucida Console", "Courier New", monospace;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(14) forwards, blink-caret .75s step-end;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 47%; }
+}
+
+.btn i {
+    transform: translateX(-50%);
+    font-size: 38px;
+}
+
+.btn-linkedin {
+    position: absolute;
+    left: 23%;
+    color: #f6bfd6;
+    bottom: 10%;
+}
+
+.btn-github {
+    left: 38%;
+    position: absolute;
+    color: #efbf94;
+    bottom: 10%;
+}
+
+.btn-envelope {
+    color: #bbcb8f;
+    position: absolute;
+    left: 53%;
+    bottom: 10%;
+}
+
+.btn-person {
+    color: #82d7de;
+    position: absolute;
+    left: 68%;
+    bottom: 10%;
+}
+
+.cartoon {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    left: 54%;
+    bottom: 35%;
+}
+
+
+
