@@ -3,20 +3,39 @@ body {
 }
 
 .custom-nav {
+    position: relative;
+    background-color: #ffffff;
+    z-index: 15; /* Set a higher z-index value to make it appear above the background */
+}
+
+.background {
+    position: fixed;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.1;
+}
+
+.custom-nav a:hover {
+    color: #ffb7d5;
+    background-color: #ffffff;
+}
+
+.custom-nav li.nav-item.nav-link.active {
+    color: #ffb7d5;
     background-color: #ffffff;
 }
 
 .custom-nav a {
     float: left;
     color: #000000;
-    font-family: "Lucida Console", "Courier New", monospace;
+    font-family: Gill Sans, sans-serif, cursive;
+    letter-spacing: .07em;
     text-align: center;
     text-decoration: none;
-    font-size: 22px;
-}
-
-.custom-nav a:hover {
-    color: #000000;
+    font-size: 26px;
+    background-color: #ffffff;
 }
 
 .image-container img {
@@ -29,7 +48,6 @@ body {
     z-index: -1;
     width: 400px;
 }
-
 
 .bottom-right {
     right: 0;
@@ -73,77 +91,195 @@ body {
     border-width: 0 1px 1px 0;
     border-style: solid;
     border-color: #ffffff;
-    left: 24%;
+    left: 20%;
     position: absolute;
-    top: 25%;
-    width: 750px;
-    height: 450px;
+    top: 22%;
+    width: 850px;
+    height: 500px;
     background-color: #ffffff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 2s linear;
 }
 
-.box h1 {
-    white-space: nowrap;
-    left: 8%;
-    position: absolute;
-    top: 20%;
-    font-size: 3rem;
-    z-index: 2;
-    color: #000000;
-    font-family: "Lucida Console", "Courier New", monospace;
-    overflow: hidden;
-    border-right: .15em solid orange;
-    margin: 0 auto;
-    letter-spacing: .15em;
-    animation: typing 3.5s steps(14) forwards, blink-caret .75s step-end;
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
+
+.intro {
+    left: 7.5%;
+    white-space: nowrap;
+    position: absolute;
+    top: 22%;
+    font-size: 42px;
+    z-index: 2;
+    font-family: Gill Sans, sans-serif, cursive;
+    font-weight: 650;
+    color: #ffaad1;
+    overflow: hidden;
+    border-right: .07em solid black;
+    margin: 0 auto;
+    letter-spacing: .10em;
+    animation: typing 1.5s steps(14) forwards, blink 1s ease-in 10s infinite;
+    animation-delay: 1.5s;
+    animation-fill-mode: both;
+
+}
+
+@keyframes blink { 50% { border-color:#fff ; }  }
+
 
 /* The typing effect */
 @keyframes typing {
     from { width: 0; }
-    to { width: 47%; }
+    to { width: 46%;
+    }
+}
+
+.description {
+    position: absolute;
+    line-height: 1.2;
+    z-index: 1;
+    left: 8%;
+    top: 30%;
+    font-size: 23px;
+    letter-spacing: .10em;
+    font-family: "Times, Times New Roman, serif";
+    animation: fade 2.5s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .btn i {
     transform: translateX(-50%);
-    font-size: 38px;
+    font-size: 45px;
 }
 
 .btn-linkedin {
     position: absolute;
     left: 23%;
-    color: #f6bfd6;
+    color: #ffe0e6;
     bottom: 10%;
 }
 
 .btn-github {
     left: 38%;
     position: absolute;
-    color: #efbf94;
+    color: #f6deba;
     bottom: 10%;
 }
 
 .btn-envelope {
-    color: #bbcb8f;
+    color: #d1e7bc;
     position: absolute;
     left: 53%;
     bottom: 10%;
 }
 
 .btn-person {
-    color: #82d7de;
+    color: #c5f7fe;
     position: absolute;
     left: 68%;
     bottom: 10%;
 }
 
 .cartoon {
-    width: 300px;
-    height: 200px;
+    width: 350px;
+    height: 230px;
     position: absolute;
-    left: 54%;
-    bottom: 35%;
+    left: 53%;
+    bottom: 30%;
+}
+
+.tab-content .tab-pane {
+    display: none;
+
+}
+
+.tab-content .tab-pane.active {
+    display: block;
 }
 
 
+.about-text {
+    width: 400px;
+    height: 700px;
+    left: 20%;
+    top: 20%;
+    color: #000000;
+}
+
+.about-text {
+    letter-spacing: .10em;
+    font-family: "Georgia, serif";
+}
+
+.background {
+    position: fixed;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.1; /* Set the desired opacity value */
+}
+
+.me {
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    left: 51%;
+    top: 10%;
+}
+
+.about-text {
+    position: absolute;
+    left: 7%;
+    top: 9%;
+}
+
+.welcome {
+    font-size: 25px;
+    top: 50%;
+}
+
+.about-me {
+    font-size: 18px;
+    top: 58%
+}
+
+.squiggle {
+    width: 200px;
+    height: 30px;
+    top: 60%;
+}
+
+.email {
+    font-size: 18px;
+    font-weight: 300;
+    top: 70%;
+}
+
+.rectangle2 {
+    border-radius: 10px;
+    border-width: 0 1px 1px 0;
+    border-style: solid;
+    border-color: #ffffff;
+    left: 17%;
+    position: absolute;
+    top: 16%;
+    width: 950px;
+    height: 600px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 2s linear;
+}
 
