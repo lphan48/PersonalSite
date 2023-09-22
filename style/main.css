@@ -301,7 +301,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-row-gap: 3rem;
+    grid-row-gap: 2.5rem;
     grid-column-gap: 0rem;
 }
 
