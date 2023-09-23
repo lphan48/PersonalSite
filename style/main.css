@@ -252,6 +252,30 @@ body {
     top: 50%;
 }
 
+.experienceHeader {
+    font-family:Georgia, serif;
+    font-size:27px;
+    padding-top:15px;
+    padding-left: 40px;
+}
+
+.experienceBody {
+    font-family:Georgia, serif;
+    font-size:16px;
+    color:black;
+    padding-top:5px;
+    padding-left: 40px;
+    margin-bottom: 0;
+}
+
+.experienceDate {
+    margin-top: 0;
+    font-family:Georgia, serif;
+    font-size:15px;
+    color:black;
+    padding-left: 40px;
+}
+
 .about-me {
     font-size: 18px;
     top: 58%
@@ -337,7 +361,7 @@ body {
     top: 52%;
     padding-left: 30px;
     font-size: 20px;
-    font-family:Gill Sans, sans-serif, cursive;
+    font-family:"Georgia, serif";
     padding-top:10px;
 }
 
@@ -348,7 +372,7 @@ body {
     padding-left: 30px;
     padding-right: 30px;
     font-size: 18px;
-    font-family:Gill Sans, sans-serif, cursive;
+    font-family:"Georgia, serif";
     padding-top:10px;
 }
 
