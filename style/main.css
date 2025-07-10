@@ -112,7 +112,7 @@ body {
     white-space: nowrap;
     position: absolute;
     top: 22%;
-    font-size: 42px;
+    font-size: 40px;
     z-index: 2;
     font-family: Gill Sans, sans-serif, cursive;
     font-weight: 650;
@@ -133,7 +133,7 @@ body {
 /* The typing effect */
 @keyframes typing {
     from { width: 0; }
-    to { width: 46%;
+    to { width: 45%;
     }
 }
 
@@ -143,7 +143,23 @@ body {
     z-index: 1;
     left: 8%;
     top: 30%;
-    font-size: 23px;
+    width: 380px;
+    font-size: 18px;
+    letter-spacing: .10em;
+    font-family: "Times, Times New Roman, serif";
+    animation: fade 2.5s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+}
+
+.descriptionTwo {
+    position: absolute;
+    line-height: 1.2;
+    z-index: 1;
+    left: 8%;
+    top: 45%;
+    width: 380px;
+    font-size: 18px;
     letter-spacing: .10em;
     font-family: "Times, Times New Roman, serif";
     animation: fade 2.5s;
@@ -234,10 +250,10 @@ body {
 }
 
 .me {
-    width: 400px;
+    width: 380px;
     height: 500px;
     position: absolute;
-    left: 51%;
+    left: 53%;
     top: 10%;
 }
 
@@ -277,7 +293,7 @@ body {
 }
 
 .about-me {
-    font-size: 18px;
+    font-size: 16px;
     top: 58%
 }
 
